@@ -1,0 +1,8 @@
+{
+  "preset": "jest-puppeteer",
+  "collectCoverage": true,
+  "coverageReporters": [
+    "json",
+    "html"
+  ]
+}

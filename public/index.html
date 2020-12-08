@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+    Please enable it to continue.</strong>
+</noscript>
+
+<div id="app"></div>
+<!-- built files will be auto injected -->
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<script>
+  <!-- 파이어베이스 비동기 로딩 -->
+  // window.addEventListener('DOMContentLoaded', function () {
+  //   (() => {
+  //     console.log('start init');
+  //     // TODO: Replace the following with your app's Firebase project configuration
+  //     const firebaseConfig = {
+  //       apiKey: 'AIzaSyD7uqpuPdTy2dUL9LsN9jUKkRuzALUf3xg',
+  //       authDomain: 'angtest-d7c83.firebaseapp.com',
+  //       databaseURL: 'https://angtest-d7c83.firebaseio.com',
+  //       projectId: 'angtest-d7c83',
+  //       storageBucket: 'angtest-d7c83.appspot.com',
+  //       messagingSenderId: '899616506604',
+  //       appId: '1:899616506604:web:e608beb7fb0bcb058f1bc9'
+  //     };
+  //
+  //     firebase.initializeApp(firebaseConfig);
+  //
+  //     console.log('end init');
+  //   })();
+  // });
+
+</script>
+</body>
 </html>
